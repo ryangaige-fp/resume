@@ -12,13 +12,31 @@
 }
 
 .resume-image{
-    height: 50%;
-    width: 100%;
+    height:20%;
+    width: 20%;
    
 }
 
-.flex-container{
-    display: flex;
+.image-container{
+    grid-area: :image;
+}
+
+.name-container{
+    grid-area: :name;
+}
+
+.subtitle-container{
+    grid-area: :subtitle;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'name name name name'
+    'image subtitle subtitle subtitle';
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+
    
 }
 
