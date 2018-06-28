@@ -1,107 +1,131 @@
-
-
-.title{
-    margin: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-.subtitle{
-    margin: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+img {
+    height: 32px;
+    width: 32px;
+}
+
+h1 {
+  padding: 0.75rem 0;
+  font-size: 2.4rem;
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.subtitle {
     font-weight: 200;
 }
 
-.resume-image{
-    height:20%;
-    width: 20%;
-   
+p,
+li {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  margin: auto;
 }
 
-.image-container{
-    grid-area: image;
+li {
+  list-style-type: none;
 }
 
-.name-container{
-    grid-area: name;
+.container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
-.subtitle-container{
-    grid-area: subtitle;
+.section {
+  padding-top: 3rem;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    'name name'
-    'image subtitle ';
-    grid-gap: 10px;
-    grid-template-columns: auto auto;
-
-   
+.resume-header {
+  margin: 0 auto;
+  padding-top: 3rem;
+  height: 60vh;
 }
 
-.flex-container div{
-    padding: 20px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-gap: 10px;
+  height: 100%;
 }
 
-.work-history-title{
-    text-align: center;
-    margin: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.image-container {
+  grid-column: 2 / 6;
+  background: url("/assets/pics/IMG_9044.jpg") center/cover no-repeat;
+  grid-row: 1 / -1;
 }
 
-.education-title{
-    text-align: center;
-    margin: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.name-container {
+  grid-column: 7 / 10;
+  grid-row: 1;
 }
 
-.about-title{
-    text-align: center;
-    margin: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.subtitle-container {
+  grid-column: 7 / 10;
+  grid-row: 2;
+ 
+}
+
+.subtitle-container p {
+    display: flex;
+    font-weight: 200;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    margin: 0;
 
 }
 
-ul{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.subtitle-container p img {
 
+    margin-right: 8px;
 }
 
-.resume-education-content-title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.work-history-title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
-/*
-.resume-header{
-margin-left: 35%;
-margin-right: 35%;
-width: 30%;
-
-}
-*/
-.resume-header-title{
-        margin-left: 25%;
-        margin-right: 25%;
+.education-title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
-.school-title{
-    font-weight: bold;
-    margin: 0%;
-    padding: 1% 0% 0% 0%
+.resume-education {
+  padding-bottom: 3rem;
 }
 
-.school-subtitle{
-    font-weight: 100;
-    margin: 0%;
+.about-title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
-/*
-div{
-    outline: 1px solid black;
+.school-title {
+  font-weight: bold;
+  padding: 1% 0% 0% 0%;
 }
 
-section{
-    outline: 1px solid blue;
+.school-subtitle {
+  font-weight: 100;
 }
-*/
