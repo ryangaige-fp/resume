@@ -8,16 +8,35 @@
     margin: 0%;
 }
 
+.resume-image{
+    height: auto;
+    width: 100%;
+   
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-container div{
+    padding: 20px;
+}
+
+/*
 .resume-header{
 margin-left: 35%;
 margin-right: 35%;
 width: 30%;
 
 }
-
+*/
 .resume-header-title{
         margin-left: 25%;
         margin-right: 25%;
+}
+
+.resume-header-content{
+
 }
 
 .resume-work-history-title{
@@ -36,6 +55,17 @@ width: 30%;
  
 
 }
+.school-title{
+    font-weight: bold;
+    margin: 0%;
+    padding: 1% 0% 0% 0%
+}
+
+.school-subtitle{
+    font-weight: 100;
+    margin: 0%;
+}
+
 /*
 div{
     outline: 1px solid black;
