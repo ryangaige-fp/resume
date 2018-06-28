@@ -18,22 +18,22 @@
 }
 
 .image-container{
-    grid-area: :image;
+    grid-area: image;
 }
 
 .name-container{
-    grid-area: :name;
+    grid-area: name;
 }
 
 .subtitle-container{
-    grid-area: :subtitle;
+    grid-area: subtitle;
 }
 
 .grid-container{
     display: grid;
     grid-template-areas: 
-    'name name name name'
-    'image subtitle subtitle subtitle';
+    'name name'
+    'image subtitle ';
     grid-gap: 10px;
     grid-template-columns: auto auto auto auto;
 
@@ -85,26 +85,6 @@ width: 30%;
         margin-right: 25%;
 }
 
-.resume-header-content{
-
-}
-
-.resume-work-history-title{
-   
-
-}
-
-
-
-.content-item-right{
-  
-
-}
-
-.content-item-title{
- 
-
-}
 .school-title{
     font-weight: bold;
     margin: 0%;
